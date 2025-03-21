@@ -1,0 +1,91 @@
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/youth3.jpg');
+    filter: blur(2px);
+    z-index: -1; 
+    background-size: cover;
+    position: fixed;
+}
+#form { 
+    text-align: center;
+    margin-top: 1%;
+    color: #fff;  
+    font-weight: bolder;
+}
+#upper-content{
+    display: flex; 
+}
+#logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    padding: 5px; 
+} 
+#words {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1;
+}
+#words strong {
+    font-size: 22px;
+    color: #2c3e50;
+}
+#words p {
+    font-size: 16px;
+    color: #555;
+}
+#content {
+    color: #000;
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px #6653531a; 
+}
+.custom-file-input::before {
+    content: "An image";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+}
+@media screen and (max-width: 600px) {
+     #form {
+        padding: 20px;
+     }
+     #upper-content{
+        display: inline; 
+    }
+    #logo {
+        width: 40px;
+        height: 40px; 
+    }
+    #words {
+        padding: 5px;
+        font-size: 10px;
+    }
+    #words strong {
+        font-size: 18px;
+    }
+    #words p {
+        font-size: 10px;
+    }
+    #upload {
+        font-size: 20px;
+        width: 200%;
+    }
+}
